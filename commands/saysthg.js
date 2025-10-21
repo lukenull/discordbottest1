@@ -23,7 +23,7 @@ module.exports = {
         const chosen=stuff[Math.floor(Math.random()*stuff.length)]
         await interaction.reply(chosen[0]);
         if (chosen.length>1) {
-            for (let i=0;i>chosen.length;i++) {
+            for (let i=0;i<chosen.length;i++) {
                 await interaction.followUp(chosen[1])
             }
         }
