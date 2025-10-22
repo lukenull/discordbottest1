@@ -29,6 +29,9 @@ client.on('interactionCreate', async interaction => {
         await interaction.reply({ content: 'There was an error executing this command.', ephemeral: true });
     }
 });
+process.on('uncaughtException', err => {
+  console.error('Uncaught exception:', err);
+});
 
 client.login(process.env.TOKEN);
 
