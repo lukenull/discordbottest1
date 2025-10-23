@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js');
 
 const choice=[[["r","rock"],["Rock","🪨",0]],[["p","paper"],["Paper","📄",1]],[["s","scissors"],["Scissors","✂️",2]]]
-const wn=["I win.","It's a tie.","You win."]
+const wn=["You win.","It's a tie.","I win."]
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('rps')
